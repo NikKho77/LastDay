@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+
+      <link rel="stylesheet" href="{% static 'css/styleRepertuar.css' %}">
+
+    <title>Title</title>
+</head>
+<body>
+<div class="allrepertuar">
+    <main>
+      <div class="MiniGalleryDiv">
+                    <div class="img-container">
+                       <a href="{% url 'manT_list' %}"> <img
+                            src="../static/img/forG/pg9.jpg"
+                            alt=""
+                            data-original="MiniGalleri11.jpg"
+                       /></a>
+                    </div>
+                    <div class="img-container">
+                       <a href="{%url 'womenT_list'%}"> <img
+                            src="../static/img/forG/pg10.jpg"
+                            alt=""
+                            data-original="MiniGalleri22.jpg"
+                       /></a>
+                    </div>
+      </div>
+    </main>
+</div>
+
+</body>
+{% endblock %}
