@@ -21,8 +21,8 @@ def video(request):
 def contacts(request):
     return render(request, 'contacts.html', {})
 
-def home(request):
-    return render(request, 'home.html', {})
+def index(request):
+    return render(request, 'index.html', {})
 
 def repertuar(request):
     return render(request, 'repertuar.html', {})
